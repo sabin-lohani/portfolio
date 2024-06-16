@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabin Lohani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        :root {
+            --black: #0B0E13;
+            --dark-gray: #6B6B6B;
+            --primary: #A0DEFF;
+            --white: #EDF8FA;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            position: relative;
+            font-family: "Nunito Sans", sans-serif;
+            height: 100vh;
+            width: 100vw;
+            background: rgb(160,222,255);
+            background: linear-gradient(45deg, rgba(160,222,255,1) 0%, rgba(237,248,250,1) 100%);
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--white);
+        }
+        header a {
+            font-weight: 600;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: var(--black);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        .navlink {
+            font-size: 1rem;
+        }
+        .active {
+            border-bottom: 2px solid var(--primary);
+        }
+
+        main {
+            height: 100%;
+            width: 100%;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .info {
+            text-align: center;
+        }
+        .info h1 {
+            font-weight: 600;
+            font-size: 5rem;
+            line-height: 95%;
+            color: var(--black);
+        }
+        .info p {
+            font-size: 2rem;
+            color: var(--dark-gray);
+            font-weight: 600;
+        }
+        .info .off {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .info ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            gap: 2rem;
+        }
+        .info ul li a {
+            color: var(--black);
+        }
+
+        .img-container {
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .img-container img {
+            height: 80%;
+            filter: drop-shadow(-3px 3px 95px var(--white));
+        }
+
+        @media screen {
+            @media (min-width: 768px) {
+                header {
+                    padding: 1rem 4rem;
+                }
+                main {
+                    padding: 0 4rem;
+                    gap: 5rem;
+                }
+                .img-container {
+                    display: flex;
+                }
+                .info {
+                    text-align: right;
+                }
+                .info ul {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="">&lt;SabinLohani&nbsp;&#47;&gt;</a>
+        <nav>
+            <ul>
+                <li><a href="" class="navlink active">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="img-container">
+            <img src="./sabin.png" alt="sabin lohani">
+        </div>
+        <div class="info">
+            <p>Hello, it's me</p>
+            <h1>Sabin Lohani</h1>
+            <p class="off">Coding the Future, One Line at a Time</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sabin-lohani/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/sabin-lohani"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="mailto:sabinlohani@yahoo.com"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
